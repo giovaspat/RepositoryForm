@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+
+      <h1> Registration </h1>
+
+      <form>
+
+          <label for="email">Email<abbr title="required">*</abbr> </label>
+          <input type="email" name="email">
+
+          <label for="password">Password<abbr title="required">*</abbr> </label>
+          <input type="password" name="password">
+
+          <label for="first_name">Name<abbr title="required">*</abbr> </label>
+          <input type="text" name="first_name" 
+          required pattern="[A-Za-z]+" maxlength="20" minlength="2">
+
+          <label for="last_name">Lastname<abbr title="required">*</abbr></label>
+          <input type="text" name="last_name" 
+          required pattern="[A-Za-z]+" maxlength="20" minlength="2">
+
+          <br>
+          <br>
+
+          <label for="birth_date">Date of Birth<abbr title="required">*</abbr></label>
+          <input type="date" name="birth_date">
+
+          <br>
+          <br>
+
+          <label for="phone_number">Phone Number<abbr title="required">*</abbr></label>
+          <input type="tel" name="phone_number">
+
+          <br>
+          <br>
+
+          <hr />
+
+
+          <h2>Subscription Plan</h2>
+
+          <label for="subscription_plan">Choose your Plan!</label>
+
+          <select name="subscription_plan" id="subscription_plan"> //tag select inserito ora
+
+                      <option value="free"><b>Free</b></option>
+                      <option value="basic"><b>Basic</b> (20 €/month)</option>
+                      <option value="standard"><b>Standard</b> (55 €/month)</option>
+                      <option value="advanced"><b>Advanced</b> (100 €/month)</option>
+                     
+          </select>
+
+          <br>
+          <br>
+          
+          <label for="pro_plan"><b>Pro Plan</b></label>
+          <input type="checkbox" id="pro_plan" name="pro_plan" value="pro_plan">
+
+          <br>
+          <br>
+          <hr>
+          <br>
+          
+
+
+          <label for="card_number">Credit Card Number<abbr title="required">*</abbr></label>
+          <input type="number" name="card_number" maxlength="19" minlength="13" >
+
+          <label for="cvc">CVC<abbr title="required">*</abbr></label>
+          <input type="number" name="cvc"maxlength="4" minlength="3">
+
+          <label for="expiration_date">Expiration Date<abbr title="required">*</abbr></label>
+          <input type="date" name="expiration_date">
+
+
+          <br>
+          <br>
+          <br>
+
+          <label for="address">Address<abbr title="required">*</abbr></label>
+          <input type="text" name="address">
+
+          <label for="house_number">House Number<abbr title="required">*</abbr></label>
+          <input type="number" name="house_number">
+
+          <label for="city">City<abbr title="required">*</abbr></label>
+          <input type="text" name="city">
+
+          <label for="zip_code">Zip Code<abbr title="required">*</abbr></label>
+          <input type="number" name="zip_code">
+
+
+          <br>
+          <br>
+          <br>
+
+          <button type="submit">Submit</button>
+          
+
+      </form>
+    </main>
+  </body>
+</html>
